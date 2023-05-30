@@ -3,9 +3,20 @@ body {
     font-family: arial;
 }
 
+header {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+
 nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 nav ul {
@@ -27,10 +38,55 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.banner {
+main {
+    margin: 10px 50px;
     display: flex !important;
-    justify-content: center;
-    background: rgb(128, 152, 244);
-    background: linear-gradient(90deg, rgba(128, 152, 244, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
 
+main img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.desc {
+    padding-left: 10px;
+}
+
+main ul li {
+    font-size: large;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+
+
+    main {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+
+    nav ul li a:hover {
+        padding: 10px 0;
+    }
 }
