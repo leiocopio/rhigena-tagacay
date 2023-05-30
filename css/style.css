@@ -1,6 +1,8 @@
 body {
     max-width: 100%;
     font-family: arial;
+    background-color: rgb(67, 66, 66) !important;
+    color: white !important;
 }
 
 header {
@@ -10,19 +12,21 @@ header {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
+    background: rgb(244, 245, 67);
+    background: linear-gradient(144deg, rgba(244, 245, 67, 1) 0%, rgba(237, 155, 0, 1) 100%);
+    color: black !important;
 }
-
 
 nav {
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
 
 }
 
 nav ul {
     list-style: none;
     color: black !important;
-
 }
 
 nav ul li a {
@@ -43,11 +47,14 @@ main {
     display: flex !important;
 }
 
-main img {
+.img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain !important;
+
 }
+
+
 
 .desc {
     padding-left: 10px;
@@ -56,21 +63,22 @@ main img {
 main ul li {
     font-size: large;
     padding-bottom: 50px;
+    font-size: x-large;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
-
+    /* Styles for tablet devices */
     main {
-        display: flex !important;
-        flex-direction: column !important;
-
+        margin: 10px 30px;
+        /* Adjust the margin for tablet layout */
     }
 
+    main ul li {
+        padding-bottom: 30px;
+        /* Adjust the padding for tablet layout */
+    }
 
-}
-
-@media (max-width: 480px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -82,11 +90,61 @@ main ul li {
         margin-top: 20px;
     }
 
-    nav ul li a {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Styles for mobile devices */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
         padding: 10px 0;
     }
 
-    nav ul li a:hover {
-        padding: 10px 0;
+    main {
+        display: flex;
+        flex-direction: column;
     }
+
+    .formobile {}
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    text-align: center;
+    background-color: black !important;
+    color: white !important;
+    position: absolute !important;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-end;
 }
