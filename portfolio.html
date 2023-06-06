@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <!-- ------------------------------------------------------------  -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="brandName">
+                <h2>Rhigena Tagacay</h2>
+            </div>
+            <a href="#" class="toggleBtn"><img src="./res/icons/menu.png" alt=""></a>
+            <div class="navbarLinks">
+
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <main class="portfolioMain">
+
+            <div class="portfolioDesc">
+
+                <h1>Portfolio</h1>
+                <p>Introducing my portfolio! With a
+                    passion for
+                    storytelling, I bring visuals to life and create impactful experiences. From crafting compelling
+                    videos
+                    to enhancing
+                    captivating photos, I strive to engage and inspire viewers. Explore my diverse work and let's
+                    collaborate on your next
+                    project.</p>
+            </div>
+            <!-- Container -->
+            <div class="container">
+                <div class="containerBox">
+                    <img src="./res/prev2.png" alt="" srcset="">
+
+                    <p>😂😂😂</p>
+                </div>
+
+                <div class="container">
+                    <div class="containerBox">
+                        <img src="./res/prev2.png" alt="" srcset="">
+
+                        <p>😂😂😂</p>
+                    </div>
+                    <div class="container">
+                        <div class="containerBox">
+                            <img src="./res/prev2.png" alt="" srcset="">
+
+                            <p>😂😂😂</p>
+                        </div>
+
+
+
+                    </div>
+
+        </main>
+
+
+
+        <footer>
+            <div class="cright">
+                <p>&copy; <span id="year"></span>,</a> made by <a href="#"><b>leiocopio</b></p>
+            </div>
+
+        </footer>
+
+
+
+
+    </div>
+
+    <script> //For year update
+        document.addEventListener("DOMContentLoaded", function () {
+            var y = new Date().getFullYear();
+            document.getElementById("year").textContent = y;
+        });
+    </script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

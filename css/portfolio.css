@@ -1,0 +1,41 @@
+.portfolioMain {
+    display: flex;
+
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    /* Add this line */
+}
+
+.portfolioDesc {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+
+
+
+}
+
+.containerBox {
+    background-color: white !important;
+    height: 25rem !important;
+    width: 20rem;
+}
+
+.containerBox img {
+    height: 50%;
+    width: auto;
+}

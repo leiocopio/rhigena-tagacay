@@ -175,6 +175,7 @@ footer {
     background-color: rgb(52, 52, 52);
     color: white;
     padding: 1rem;
+
 }
 
 .cright {
@@ -197,4 +198,6 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: space-between;
+    /* Add this line */
 }
